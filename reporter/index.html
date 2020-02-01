@@ -9,15 +9,32 @@
 	<title>VITCMUN: Reporter Applications</title>
 	<link rel="stylesheet" href="assets/demo.css">
 	<link rel="stylesheet" href="assets/form-labels-on-top.css">
-	<link rel="stylesheet" href="assets/scrollbar.css">
+    <link rel="stylesheet" href="assets/scrollbar.css">
+    
+    <style>
+        .image-responsive{
+            width: 15%;
+            height: 15%;
+        }
+
+        @media only screen and (max-width: 756px){
+            .image-responsive{
+                width: 40%;
+                height: 40%;
+            }
+        }
+
+    </style>
 
 </head>
-<body bgcolor="#511926">
+<body style="background-color: #511926;">
 
 	<header>
 		<h1>VITCMUN: Reporter Applications</h1>
     </header>
-	<br><Br>
+    <div align="center">
+        <img src="https://i.imgur.com/BRC0XSm.png" class="image-responsive" alt="VITCMUN'20" style="align-self: center;">
+    </div>
     <div class="main-content">
         <form class="form-labels-on-top" method="POST" action="request.php">
 
@@ -85,8 +102,8 @@
         </form>
     </div>
 	<br><br>
-	<footer>
-		<h1>Debate.     Delegate.     Decimate.</h1>
+	<footer style="margin-top:5%">
+		<h2 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: antiquewhite;">VITCMUN'20 Tech-Team</h2>
     </footer>
 </body>
 </html>

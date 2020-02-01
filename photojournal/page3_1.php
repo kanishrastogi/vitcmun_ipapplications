@@ -39,8 +39,8 @@
         </form>
     </div>
 	<br><br>
-	<footer style="margin-top:5%">
-		<h2 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: antiquewhite;">VITCMUN'20 Tech-Team</h2>
+	<footer>
+		<h1>Debate.     Delegate.     Decimate.</h1>
     </footer>
 </body>
 </html>

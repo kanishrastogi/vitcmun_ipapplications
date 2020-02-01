@@ -1,1 +1,6 @@
 [23-Jan-2020 16:28:41 UTC] PHP Notice:  Undefined index: db in /home/u720206343/domains/vitcmun.in/public_html/iphead/request.php on line 21
+[01-Feb-2020 06:21:39 UTC] PHP Parse error:  syntax error, unexpected '$c1' (T_VARIABLE) in /home/u720206343/domains/vitcmun.in/public_html/reporter/request.php on line 73
+[01-Feb-2020 06:21:51 UTC] PHP Parse error:  syntax error, unexpected '$c1' (T_VARIABLE) in /home/u720206343/domains/vitcmun.in/public_html/reporter/request.php on line 73
+[01-Feb-2020 06:29:56 UTC] PHP Parse error:  syntax error, unexpected '$c1' (T_VARIABLE) in /home/u720206343/domains/vitcmun.in/public_html/reporter/request.php on line 73
+[01-Feb-2020 06:30:30 UTC] PHP Parse error:  syntax error, unexpected '$c1' (T_VARIABLE) in /home/u720206343/domains/vitcmun.in/public_html/reporter/request.php on line 73
+[01-Feb-2020 06:31:01 UTC] PHP Parse error:  syntax error, unexpected '$c1' (T_VARIABLE) in /home/u720206343/domains/vitcmun.in/public_html/reporter/request.php on line 73

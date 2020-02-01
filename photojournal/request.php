@@ -2,8 +2,6 @@
 
 session_start();
 
-//header("Location:www.google.com");
-
 if(isset($_POST['form1'])){
 
 	$_SESSION['name'] = $_POST["name"];
@@ -12,16 +10,16 @@ if(isset($_POST['form1'])){
 	$_SESSION['mobile'] = $_POST["mobileno"];
 	$_SESSION['email'] = $_POST["email"];
 	$_SESSION['college'] = $_POST["college"];
-	//echo "<script>alert('adasd');</script>";
+	echo "<script>alert('adasd');</script>";
 	header("Location:page2.html");
 
 }
 
  if(isset($_POST['form2'])){
 	$db = $_SESSION['db'];
- 	$_SESSION['db'] = $_POST["Delegate-experience"];
+ 	$_SESSION['db'] = $_POST["Camera"];
  	//$_SESSION['dbn']=$_POST["Del-experience-no"];
- 	$_SESSION['eb'] = $_POST["eb-experience"];
+ 	$_SESSION['eb'] = $_POST["Lens"];
 	//$_SESSION['ebn']=$_POST["eb-experience-no"];
   	$_SESSION['str'] = $_POST['str'];
   	$_SESSION['vid'] = $_POST['vid'];
@@ -59,27 +57,6 @@ if(isset($_POST['form1'])){
  if(isset($_POST['form31'])){
  	//echo "<script>alert('sadasda');</script>";
  	$_SESSION['council1'] = $_POST["council-preference-1"];
- 	header("Location:page4_1.html");
-
- }
-
-if(isset($_POST['form41'])){
- 	$_SESSION['que1'] = $_POST["Q1"];
- 	header("Location:page4_2.html");
-
- }
-
- if(isset($_POST['form42'])){
- 	$_SESSION['que2'] = $_POST["Q2"];
- 	header("Location:page5.html");
-
- }
-
-if(isset($_POST['final_button'])){
- 	$_SESSION['accomodation'] = $_POST["checkbox"];
-	$_SESSION['poscons'] = $_POST["consent"];
-
-//echo "jww";
 	$name = addslashes($_SESSION['name']);
  	$dob = $_SESSION['dob'];
  	$city = addslashes($_SESSION['city']);
@@ -94,28 +71,21 @@ if(isset($_POST['final_button'])){
  	$c1 = $_SESSION['council1'];
 
 
-
-	$q1 = addslashes($_SESSION['que1']);
-	$q2 = addslashes($_SESSION['que2']);
-
-	$accomodation = $_SESSION['accomodation'];
-	$consent = $_SESSION['poscons'];
-
 	$server = "mysql.hostinger.in";
 	$username = "u720206343_tech";
-	$password = "tech123";
+	$password = "@Abhijeet";
 	$dbname = "u720206343_vitcc";
 
-   // echo "<script>alert("Hello")</script>";
+    //echo "<script>alert(\"Hello\")</script>";
 
 
    	$conn = mysqli_connect($server, $username, $password, $dbname);
 
    	if($conn){
-   	    echo("asdsa");
+   	    //echo("asdsa");
    	}
 
-   	$sql = "INSERT INTO ip VALUES('".$name."','".$dob."','".$city."','".$mobile."','".$email."','".$college."','".$db."','".$eb."','".$c1."','".$q1."','".$q2."','".$accomodation."','".$consent."')";
+   	$sql = "INSERT INTO photo VALUES('".$name."','".$dob."','".$city."','".$mobile."','".$email."','".$college."','".$db."','".$eb."','".$c1."')";
 
     //echo "<script>alert('dsad');</script>";
 
